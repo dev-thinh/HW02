@@ -1,10 +1,10 @@
-# TC-COUPON-BVA-001: Áp dụng SAVE10 với giỏ hàng có tổng tiền 299,999 ₫ (MIN-1)
+# TC-COUPON-BVA-007: Áp dụng VIP100 với giỏ hàng có tổng tiền 299,999 ₫ (MIN-1)
 
 ## Requirement ID
 FR-09 (C3)
 
 ## Module / Test type / Technique
-Coupons / Functional / BVA (total_amount MIN-1 for SAVE10)
+Coupons / Functional / BVA (total_amount MIN-1 for VIP100)
 
 ## Preconditions
 - Người dùng đã đăng nhập với tài khoản `test@eshop.com`
@@ -13,13 +13,13 @@ Coupons / Functional / BVA (total_amount MIN-1 for SAVE10)
 ## Test data
 | Field | Value |
 |-------|-------|
-| Coupon code | `SAVE10` |
+| Coupon code | `VIP100` |
 | Cart total | `299,999` ₫ |
 
 ## Test steps
 1. Thêm sản phẩm vào giỏ sao cho tổng tiền là `299,999` ₫
 2. Đi tới trang Checkout
-3. Nhập mã coupon `SAVE10` vào ô coupon
+3. Nhập mã coupon `VIP100` vào ô coupon
 4. Bấm nút **Áp dụng**
 
 ## Expected result

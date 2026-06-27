@@ -1,34 +1,34 @@
-# TC-COUPON-001: Áp dụng coupon hợp lệ và được giảm giá đúng
+# TC-COUPON-001: Áp dụng coupon percent hợp lệ (SAVE10) thành công
 
 ## Requirement ID
 FR-09
 
 ## Module / Test type / Technique
-Coupons / Functional / Domain Testing – Equivalence Partitioning (Valid Class)
+Coupons / Functional / Domain Testing – EP (COMBO-01)
 
 ## Preconditions
-- User đã đăng nhập
-- Giỏ hàng có ít nhất 1 sản phẩm, tổng giá trị đủ điều kiện áp dụng coupon
-- Coupon hợp lệ tồn tại trong hệ thống (chưa hết hạn, chưa dùng hết lượt)
+- Người dùng đã đăng nhập với tài khoản `test@eshop.com`
+- Đang ở trang Checkout (`/checkout`)
+- Giỏ hàng có tổng số tiền `500,000` ₫ (lớn hơn ngưỡng 300,000 ₫)
+- Mã giảm giá `SAVE10` tồn tại, đang hoạt động, còn hạn dùng và người dùng chưa từng sử dụng
 
 ## Test data
 | Field | Value |
 |-------|-------|
-| Coupon code | `SAVE10` (10% off) |
-| Cart total | `500,000 VND` |
-| Expected discount | `50,000 VND` |
+| Coupon code | `SAVE10` |
+| Cart total | `500,000` ₫ |
 
 ## Test steps
-1. Thêm sản phẩm vào giỏ hàng, tổng = 500,000 VND
-2. Vào trang Checkout
-3. Nhập mã coupon `SAVE10` vào ô coupon
-4. Bấm **Apply**
+1. Đăng nhập bằng tài khoản `test@eshop.com` / `Test1234!`
+2. Thêm sản phẩm vào giỏ hàng sao cho tổng tiền là `500,000` ₫
+3. Đi tới trang Checkout
+4. Nhập mã coupon `SAVE10` vào ô coupon
+5. Bấm nút **Áp dụng**
 
 ## Expected result
-- Coupon được chấp nhận
-- Hiển thị thông báo áp dụng thành công
-- Discount = 50,000 VND được trừ vào tổng đơn hàng
-- Total mới = 450,000 VND
+- Mã giảm giá được áp dụng thành công.
+- Giá trị giảm giá hiển thị chính xác: giảm 10% tức là giảm `50,000` ₫ (Spec). 
+- *Lưu ý (SUT Bug):* Trên ứng dụng thực tế, do lỗi tính toán công thức `percent` ở backend, hệ thống tính ra số tiền giảm là âm `-4,500,000` ₫ (hoặc sai lệch tùy thuộc vào giá trị nhập) và dẫn đến tổng tiền thanh toán bị tăng lên thay vì giảm đi.
 
 ## Status / Related bugs
 Not Run / None

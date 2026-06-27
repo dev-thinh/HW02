@@ -1,34 +1,34 @@
-# TC-COUPON-002: Áp dụng coupon đã hết hạn bị từ chối
+# TC-COUPON-002: Áp dụng coupon fixed hợp lệ (BIGBUY) thành công
 
 ## Requirement ID
 FR-09
 
 ## Module / Test type / Technique
-Coupons / Functional / Domain Testing – Equivalence Partitioning (Invalid Class: Expired)
+Coupons / Functional / Domain Testing – EP (COMBO-02)
 
 ## Preconditions
-- User đã đăng nhập
-- Giỏ hàng có sản phẩm
-- Coupon tồn tại trong DB nhưng **expired_date < today**
+- Người dùng đã đăng nhập với tài khoản `test@eshop.com`
+- Đang ở trang Checkout (`/checkout`)
+- Giỏ hàng có tổng số tiền `600,000` ₫ (lớn hơn ngưỡng 500,000 ₫)
+- Mã giảm giá `BIGBUY` tồn tại, đang hoạt động, còn hạn dùng và người dùng chưa từng sử dụng
 
 ## Test data
 | Field | Value |
 |-------|-------|
-| Coupon code | `EXPIRED20` |
-| Expiry date | Ngày trong quá khứ |
-| Cart total | `300,000 VND` |
+| Coupon code | `BIGBUY` |
+| Cart total | `600,000` ₫ |
 
 ## Test steps
-1. Thêm sản phẩm vào giỏ hàng
-2. Vào trang Checkout
-3. Nhập mã coupon `EXPIRED20`
-4. Bấm **Apply**
+1. Đăng nhập bằng tài khoản `test@eshop.com` / `Test1234!`
+2. Thêm sản phẩm vào giỏ hàng sao cho tổng tiền là `600,000` ₫
+3. Đi tới trang Checkout
+4. Nhập mã coupon `BIGBUY` vào ô coupon
+5. Bấm nút **Áp dụng**
 
 ## Expected result
-- Coupon bị từ chối
-- Hiển thị thông báo lỗi: "Mã coupon đã hết hạn" hoặc tương đương
-- Tổng đơn hàng **không thay đổi**
-- Không áp dụng discount
+- Mã giảm giá được áp dụng thành công.
+- Số tiền giảm giá hiển thị chính xác là `50,000` ₫.
+- Thành tiền hiển thị chính xác: `550,000` ₫.
 
 ## Status / Related bugs
 Not Run / None
