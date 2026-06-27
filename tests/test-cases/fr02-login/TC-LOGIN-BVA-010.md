@@ -30,4 +30,4 @@ Login / Functional / BVA (login_attempts MAX)
 - locked_until được thiết lập.
 
 ## Status / Related bugs
-Not Run / None
+Pass / None

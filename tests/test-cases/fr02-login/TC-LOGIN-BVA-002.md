@@ -33,4 +33,4 @@ Login / Functional / BVA (password length MIN)
 
 ## Status / Related bugs
 
-Fail / None
+Pass / None
