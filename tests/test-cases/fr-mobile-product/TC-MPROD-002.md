@@ -1,24 +1,30 @@
 # TC-MPROD-002: Thêm vào giỏ hàng thành công với số lượng nguyên dương
 
 ## Requirement ID
+
 FR-06 (Mobile)
 
 ## Module / Test type / Technique
+
 Mobile-Product / Functional / Domain Testing – EP (COMBO-01)
 
 ## Preconditions
+
 - Đang ở màn hình chi tiết sản phẩm `iPhone 15 Pro Max` trên Mobile App.
 
 ## Test data
-| Field | Value |
-|-------|-------|
+
+| Field    | Value |
+| -------- | ----- |
 | Số lượng | `"5"` |
 
 ## Test steps
+
 1. Nhập số lượng `"5"` vào ô số lượng.
 2. Nhấn nút **Thêm vào giỏ hàng**.
 
 ## Expected result
+
 - Hệ thống hiển thị Alert thông báo: "Thành công - Đã thêm vào giỏ hàng".
 - Badge icon giỏ hàng hiển thị số lượng cập nhật chính xác (+5).
 - Khi điều hướng sang trang Giỏ hàng:
@@ -28,4 +34,5 @@ Mobile-Product / Functional / Domain Testing – EP (COMBO-01)
   - Nếu sản phẩm đã có sẵn trong giỏ trước đó, tổng số lượng của sản phẩm được cộng dồn (không tạo thêm dòng mới trùng lặp).
 
 ## Status / Related bugs
-Not Run / None
+
+Pass / None
