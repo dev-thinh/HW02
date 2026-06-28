@@ -77,4 +77,4 @@ hw02-eshop/
 
 ## AI Declaration
 
-Em sử dụng trợ lý AI Gemini (Antigravity Agent) để thực hiện phân tích các biến kiểm thử (SKILL-01), phân hoạch lớp tương đương (SKILL-02), xác định giá trị biên (SKILL-03), viết chi tiết mã nguồn test case (SKILL-04) và phân tích các trường hợp bị bỏ sót (SKILL-05). Toàn bộ nhật ký tương tác và các đóng góp chỉnh sửa của em được khai báo minh bạch trong [main-report-template.md](main-report.md) và lịch sử Git.
+Em sử dụng trợ lý AI Gemini (Antigravity Agent) để thực hiện phân tích các biến kiểm thử (SKILL-01), phân hoạch lớp tương đương (SKILL-02), xác định giá trị biên (SKILL-03), viết chi tiết mã nguồn test case (SKILL-04) và phân tích các trường hợp bị bỏ sót (SKILL-05). Toàn bộ nhật ký tương tác và các đóng góp chỉnh sửa của em được khai báo minh bạch trong [main-report.md](main-report.md) và lịch sử Git.
