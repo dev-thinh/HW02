@@ -1,36 +1,30 @@
-# TC-CAT-001: Tạo danh mục mới thành công với dữ liệu hợp lệ
+# TC-CAT-001: Admin tạo danh mục mới với tên hợp lệ
 
 ## Requirement ID
-FR-14
+FR-14, FR-12
 
 ## Module / Test type / Technique
-Category / Functional / Domain Testing – Equivalence Partitioning (Valid Class: Create)
+Category / Functional / Domain Testing – EP (COMBO-01)
 
 ## Preconditions
-- User đã đăng nhập với role **Admin**
-- Đang ở trang quản lý danh mục (`/admin/categories`)
-- Tên danh mục chưa tồn tại trong hệ thống
+- Người dùng đã đăng nhập với tài khoản Admin (`admin@eshop.com` / `Admin123!`)
+- Đang ở trang quản lý danh mục trên Web Admin (`http://localhost:5174`)
 
 ## Test data
 | Field | Value |
 |-------|-------|
-| Category name | `Điện tử` |
-| Description | `Các sản phẩm điện tử` |
-| Status | Active |
+| Tên danh mục mới | `Gia dụng` |
 
 ## Test steps
-1. Truy cập `/admin/categories`
-2. Bấm nút **Add Category** / **Thêm danh mục**
-3. Nhập tên danh mục: `Điện tử`
-4. Nhập mô tả (nếu có)
-5. Chọn Status = Active
-6. Bấm **Save**
+1. Đăng nhập cổng Web Admin bằng tài khoản admin.
+2. Điều hướng tới trang Quản lý danh mục.
+3. Nhập tên danh mục: `Gia dụng` vào ô nhập liệu.
+4. Bấm nút **Thêm mới**.
 
 ## Expected result
-- Danh mục được tạo thành công
-- Hiển thị thông báo thành công
-- Danh mục `Điện tử` xuất hiện trong danh sách
-- Danh mục có thể được chọn khi thêm sản phẩm
+- Danh mục mới `Gia dụng` được tạo thành công.
+- Danh mục xuất hiện trong danh sách hiển thị với ID mới.
+- Cơ sở dữ liệu thêm dòng mới vào bảng `categories`.
 
 ## Status / Related bugs
 Not Run / None

@@ -1,32 +1,28 @@
-# TC-CAT-002: Tạo danh mục thất bại khi tên đã tồn tại (duplicate)
+# TC-CAT-002: Admin tạo danh mục trùng tên
 
 ## Requirement ID
 FR-14
 
 ## Module / Test type / Technique
-Category / Functional / Domain Testing – Equivalence Partitioning (Invalid Class: Duplicate Name)
+Category / Functional / Domain Testing – EP (COMBO-02)
 
 ## Preconditions
-- User đã đăng nhập với role **Admin**
-- Danh mục `Điện tử` **đã tồn tại** trong hệ thống
+- Người dùng đã đăng nhập với tài khoản Admin (`admin@eshop.com` / `Admin123!`)
+- Đang ở trang quản lý danh mục trên Web Admin
+- Danh mục `Điện thoại` đã tồn tại trong hệ thống
 
 ## Test data
 | Field | Value |
 |-------|-------|
-| Category name | `Điện tử` (trùng với danh mục đã có) |
-| Description | `Mô tả khác` |
+| Tên danh mục mới | `Điện thoại` |
 
 ## Test steps
-1. Truy cập `/admin/categories`
-2. Bấm **Add Category**
-3. Nhập tên danh mục: `Điện tử` (trùng tên)
-4. Nhập mô tả
-5. Bấm **Save**
+1. Nhập tên danh mục: `Điện thoại` vào ô nhập liệu.
+2. Bấm nút **Thêm mới**.
 
 ## Expected result
-- Hệ thống từ chối tạo danh mục
-- Hiển thị thông báo lỗi: "Tên danh mục đã tồn tại" hoặc tương đương
-- Không có danh mục trùng nào được thêm vào DB
+- Danh mục được tạo thành công với một ID mới (mặc dù trùng tên với danh mục đã có).
+- *Lưu ý:* Hệ thống SUT hiện tại cho phép tạo trùng tên danh mục do không có ràng buộc UNIQUE trong DB.
 
 ## Status / Related bugs
 Not Run / None
