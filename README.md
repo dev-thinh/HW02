@@ -15,23 +15,19 @@
 
 ## Test Summary Report
 
-| Metric                      | Count |
-| --------------------------- | ----- |
-| Features tested             | 4     |
-| Test cases designed         | 82    |
-| Test cases executed         | 82    |
-| Test cases passed           | 61    |
-| Test cases failed           | 21    |
-| Test cases not yet executed | 0     |
-| Bugs discovered             | 14    |
+| Metric                      | Count                                                             |
+| --------------------------- | ----------------------------------------------------------------- |
+| Features tested             | 4                                                                 |
+| Test cases designed         | 82                                                                |
+| Test cases executed         | 82                                                                |
+| Test cases passed           | 61                                                                |
+| Test cases failed           | 21                                                                |
+| Test cases not yet executed | 0                                                                 |
+| Bugs discovered             | [14 Issues trên GitHub](https://github.com/dev-thinh/HW02/issues) |
 
 ### Demo Videos & Walkthroughs
 
 - Agent Skill Demo: _(Không yêu cầu trong bài nộp)_
-- Feature FR-02 walkthrough: [Xem chi tiết tại main-report-template.md](main-report-template.md#feature-a)
-- Feature FR-09 walkthrough: [Xem chi tiết tại main-report-template.md](main-report-template.md#feature-b)
-- Feature FR-14 walkthrough: [Xem chi tiết tại main-report-template.md](main-report-template.md#feature-c)
-- Feature Mobile walkthrough: [Xem chi tiết tại main-report-template.md](main-report-template.md#feature-d)
 
 ---
 
@@ -75,4 +71,4 @@ hw02-eshop/
 
 ## AI Declaration
 
-Tôi sử dụng trợ lý AI Gemini (Antigravity Agent) để thực hiện phân tích các biến kiểm thử (SKILL-01), phân hoạch lớp tương đương (SKILL-02), xác định giá trị biên (SKILL-03), viết chi tiết mã nguồn test case (SKILL-04) và phân tích các trường hợp bị bỏ sót (SKILL-05). Toàn bộ nhật ký tương tác và các đóng góp chỉnh sửa của sinh viên được khai báo minh bạch trong [main-report-template.md](main-report-template.md) và lịch sử Git.
+Em sử dụng trợ lý AI Gemini (Antigravity Agent) để thực hiện phân tích các biến kiểm thử (SKILL-01), phân hoạch lớp tương đương (SKILL-02), xác định giá trị biên (SKILL-03), viết chi tiết mã nguồn test case (SKILL-04) và phân tích các trường hợp bị bỏ sót (SKILL-05). Toàn bộ nhật ký tương tác và các đóng góp chỉnh sửa của em được khai báo minh bạch trong [main-report-template.md](main-report-template.md) và lịch sử Git.

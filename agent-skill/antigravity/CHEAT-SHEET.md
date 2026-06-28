@@ -8,6 +8,7 @@
    - `SKILL-01` đến `SKILL-05` → Knowledge / Skills
 
 3. System prompt gợi ý cho agent:
+
 ```
 You are a software testing expert helping a student complete HW02 – Domain Testing on EShop.
 
@@ -72,19 +73,19 @@ SKILL-01 FR-06 Mobile: Product Detail View
 
 ---
 
-## Việc bạn phải tự làm (AI không thể thay)
+## Việc phải tự làm
 
-| Bước | Việc | Lúc nào |
-|------|------|---------|
-| Verify ⚠️ unknowns | Mở app, test thực tế để tìm MAX length, lockout threshold... | Sau SKILL-03 |
-| Review TC | Đọc từng TC, sửa expected result sai | Sau SKILL-04 |
-| Tạo file .md | Copy output → tạo file trong repo | Sau SKILL-04 |
-| Git commit | `git add` + `git commit` + `git push` | Sau mỗi skill |
-| Execute TC | Chạy tay từng TC trên app EShop | Sau SKILL-04 |
-| Chụp screenshot | Screenshot bug, đính vào GitHub Issue | Khi TC fail |
-| Tạo GitHub Issue | Điền bug report, gắn label | Khi TC fail |
-| Điền audit log | Thêm "User corrections" vào mỗi entry | Sau mỗi skill |
-| Viết AI Critique | Dùng SKILL-05 output làm nháp, viết lại bằng lời mình | Cuối bài |
+| Bước             | Việc                                                         | Lúc nào       |
+| ---------------- | ------------------------------------------------------------ | ------------- |
+| Verify unknowns  | Mở app, test thực tế để tìm MAX length, lockout threshold... | Sau SKILL-03  |
+| Review TC        | Đọc từng TC, sửa expected result sai                         | Sau SKILL-04  |
+| Tạo file .md     | Copy output → tạo file trong repo                            | Sau SKILL-04  |
+| Git commit       | `git add` + `git commit` + `git push`                        | Sau mỗi skill |
+| Execute TC       | Chạy tay từng TC trên app EShop                              | Sau SKILL-04  |
+| Chụp screenshot  | Screenshot bug, đính vào GitHub Issue                        | Khi TC fail   |
+| Tạo GitHub Issue | Điền bug report, gắn label                                   | Khi TC fail   |
+| Điền audit log   | Thêm "User corrections" vào mỗi entry                        | Sau mỗi skill |
+| Viết AI Critique | Dùng SKILL-05 output làm nháp, viết lại bằng lời mình        | Cuối bài      |
 
 ---
 
@@ -111,9 +112,9 @@ git commit -m "feat(fr02): add 4 gap analysis test cases (security + context)"
 
 ## Lệnh đặc biệt
 
-| Lệnh | Tác dụng |
-|------|----------|
-| `export audit log` | Agent xuất toàn bộ audit entries của session |
-| `new feature` | Reset context sang feature mới (giữ audit log) |
-| `summary so far` | Agent tóm tắt TCs đã tạo + trạng thái |
-| `what's missing` | Agent kiểm tra checklist còn thiếu gì |
+| Lệnh               | Tác dụng                                       |
+| ------------------ | ---------------------------------------------- |
+| `export audit log` | Agent xuất toàn bộ audit entries của session   |
+| `new feature`      | Reset context sang feature mới (giữ audit log) |
+| `summary so far`   | Agent tóm tắt TCs đã tạo + trạng thái          |
+| `what's missing`   | Agent kiểm tra checklist còn thiếu gì          |
