@@ -34,4 +34,4 @@ Category / Security / Domain Testing – Security Gap
 
 ## Status / Related bugs
 
-Pass / None (React tự động escaping chuỗi render trên giao diện nên mã script không bị thực thi).
+Pass / None
