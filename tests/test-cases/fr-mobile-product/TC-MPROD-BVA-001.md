@@ -29,4 +29,4 @@ Mobile-Product / Functional / BVA (quantity MIN-1)
 
 ## Status / Related bugs
 
-Fail / #15
+Fail / #9
