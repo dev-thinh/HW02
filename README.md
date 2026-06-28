@@ -25,9 +25,11 @@
 | Test cases not yet executed | 0                                                                 |
 | Bugs discovered             | [14 Issues trên GitHub](https://github.com/dev-thinh/HW02/issues) |
 
-### Demo Videos & Walkthroughs
+### Demo Videos & Repository
 
-- Agent Skill Demo: _(Không yêu cầu trong bài nộp)_
+[Agent Skill Demo](https://youtu.be/o7a1H06VPUc)
+
+[Repository](https://github.com/dev-thinh/HW02)
 
 ---
 
@@ -36,7 +38,11 @@
 ```
 hw02-eshop/
 ├── README.md
-├── main-report-template.md
+├── main-report.md
+├── main-report.pdf
+├── ai-audit-report.md
+├── ai-audit-report.pdf
+├── git-commit-log.txt
 ├── agent-skill/
 │   └── antigravity/
 │       ├── CHEAT-SHEET.md

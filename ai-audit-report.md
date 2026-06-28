@@ -1,4 +1,4 @@
-# AI Audit Report – HW02 Domain Testing
+# AI Audit Report - HW02 Domain Testing
 
 ## Declaration
 
@@ -562,7 +562,7 @@ Em sử dụng trợ lý AI Gemini (Antigravity Agent) để thực hiện sinh 
 
 ---
 
-## AI Critique (200–300 words)
+## AI Critique (200-300 words)
 
 Trong quá trình áp dụng Domain Testing và BVA cho bốn tính năng của EShop với sự hỗ trợ của AI, em nhận thấy AI có những điểm yếu sau:
 
