@@ -1,0 +1,89 @@
+commit 393c3b3ab1db06459e714170ecc5a9deb98a573b
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 02:43:47 2026 +0700
+
+    feat(audit-log): complete ai audit log
+
+commit 8cb261de83f041ae84b4eb933a311160ed76368f
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 02:33:02 2026 +0700
+
+    feat(audit): export and format full audit log into ai-audit-report.md
+
+commit cd67a220eba11894b49401de8fd5821c4fe6aa81
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 02:20:44 2026 +0700
+
+    feat(readme): complete README self-assessment and statistics
+
+commit f962eb0bba58485d3b12a7aa0c09353babd5d1ca
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 02:19:10 2026 +0700
+
+    feat(summary): complete test runs and test summary
+
+commit d4a7fbcd4c0df073c91c6c1b6d798aa4081d3fca
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 02:16:16 2026 +0700
+
+    feat(test-results): complete sprint run log and traceability matrix for all 82 TCs
+
+commit 562ffb517423ebce9c2730c31cc1e9ba69a01f88
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 02:15:05 2026 +0700
+
+    feat(main-report): complete the main report
+
+commit e3a922cc793026ecf2c6452c851cee3fcfd5dd01
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 02:12:14 2026 +0700
+
+    feat(hw02): complete report and add security gap test cases
+
+commit 563f963f83274de15a160b4893244121245e978b
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 00:49:59 2026 +0700
+
+    test(fr-mobile): sprint 1 execution – 8 pass, 7 fail
+
+commit 0f42b53d777c159eba6bd520c1b7600fdff25a57
+Author: Thinh <thinh367800@gmail.com>
+Date:   Mon Jun 29 00:06:40 2026 +0700
+
+    feat(fr-mobile): add 15 test cases – domain testing and BVA
+
+commit ea69750df7e6ade9fcaf10fbf95c845db296bae9
+Author: Thinh <thinh367800@gmail.com>
+Date:   Sun Jun 28 19:56:23 2026 +0700
+
+    test(fr14): sprint 1 execution – 9 pass, 9 fail
+
+commit 878d3d2469cd4af20a043a6832b12ddb880dca70
+Author: Thinh <thinh367800@gmail.com>
+Date:   Sun Jun 28 14:00:41 2026 +0700
+
+    feat(fr14): add 19 test cases – domain testing and BVA
+
+commit a0599dd79e0dd2c3e43bf82ce689957eaeeae28e
+Author: Thinh <thinh367800@gmail.com>
+Date:   Sun Jun 28 02:45:14 2026 +0700
+
+    test(fr02): sprint 1 execution – 22 pass, 5 fail
+
+commit 59e66e9a2b48427813ab0ae1c4ccd6a691f3b1f0
+Author: Thinh <thinh367800@gmail.com>
+Date:   Sun Jun 28 01:54:12 2026 +0700
+
+    feat(fr02): add 27 test cases – domain testing and BVA
+
+commit 6845c78df1f83ca0428fbcf71f4f07f06df32357
+Author: Thinh <thinh367800@gmail.com>
+Date:   Sun Jun 28 00:40:52 2026 +0700
+
+    test(fr02): sprint 1 execution – 21 pass, 0 fail
+
+commit dcdadf6c0843a77ea8d9b5378c8afe3130c22611
+Author: Thinh <thinh367800@gmail.com>
+Date:   Sun Jun 28 00:23:17 2026 +0700
+
+    Initial commit
